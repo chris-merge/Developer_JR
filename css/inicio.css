@@ -1,0 +1,77 @@
+/*carrusel*/
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel {
+    border-radius: 30px;
+}
+
+
+/*carrusel*/
+
+body {
+    background-color: #0A192F;
+}
+
+.navbar {
+    background-color: #20B2AA
+}
+
+.navbar-item,
+.navbar-link {
+    color: black;
+}
+
+.navbar-end {
+    min-width: 250px;
+}
+
+
+/*color del hover*/
+
+.navbar-item:hover {
+    /* Cambiar color de fondo */
+    color: #f8f2f2 !important;
+    /* Cambiar color del texto */
+}
+
+.navbar-link:hover {
+    color: white;
+}
