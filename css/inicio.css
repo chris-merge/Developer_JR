@@ -51,7 +51,7 @@ body {
 }
 
 .navbar {
-    background-color: #20B2AA
+    background-color: #20B2AA;
 }
 
 .navbar-item,
@@ -74,4 +74,91 @@ body {
 
 .navbar-link:hover {
     color: white;
+}
+
+
+/*sombra de la div del logo*/
+
+#logo_box {
+    background-color: transparent;
+}
+
+#logo_box>img {
+    border-radius: 50px;
+}
+
+
+/*quitar el fondo de div por defecto del titulo nuestros servicios*/
+
+.box_mio {
+    background-color: transparent;
+}
+
+
+/*marco de vision y mision*/
+
+.marco {
+    border: 3px solid rgb(245, 245, 245);
+}
+
+
+/*separar los dos div de mision y vision*/
+
+#mision_vision,
+div {
+    margin-left: 20px;
+}
+
+
+/*formulario*/
+
+.custom-form {
+    width: 800px;
+    /* Ancho del formulario */
+    height: auto;
+    /* Alto automático según el contenido */
+    max-width: 100%;
+    /* Asegura que no se pase en móviles */
+    padding: 40px;
+    /* Espaciado interno */
+    border: 2px solid white;
+}
+
+
+/*espacio para que el formulario no tope con el pie de pagina*/
+
+#form {
+    padding-bottom: 25px;
+}
+
+
+/*pie de pagina trasparente*/
+
+.footer {
+    background-color: #20B2AA;
+    border-radius: 25px;
+    padding: 0px;
+}
+
+
+/*texto del foter*/
+
+.footer_title {
+    color: white;
+}
+
+
+/*quitarle el color negro de los link del footer*/
+
+#footer_seccion a {
+    background-color: transparent;
+    border: 0;
+}
+
+#footer_seccion a:hover {
+    background-color: #0A192F;
+}
+
+#Empresa {
+    color: black;
 }
