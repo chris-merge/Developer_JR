@@ -29,18 +29,24 @@
 
 .carousel-controls button {
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(235, 6, 6);
     border: none;
-    padding: 10px;
+    padding: 1.5rem;
     cursor: pointer;
 }
 
 .carousel-controls button:hover {
     background: rgba(0, 0, 0, 0.8);
+    font-size: large;
 }
 
 .carousel {
     border-radius: 30px;
+}
+
+#prevBtn,
+#nextBtn {
+    font-size: large;
 }
 
 

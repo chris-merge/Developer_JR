@@ -1,16 +1,18 @@
-document.getElementById('emailForm').addEventListener('submit', async function(event) {
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
     event.preventDefault();
 
-    const to = document.getElementById('to').value;
-    const subject = document.getElementById('nombre').value;
-    const gmail = document.getElementById('gmail').value;
-    const mensaje = document.getElementById('mensaje').value;
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
 
-    const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ to, subject, message })
+    const response = await fetch("/enviar-correo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
     });
+
+    ##
+    HOLA MUNDO
+    VOND
 
     const result = await response.json();
     alert(result.message);
